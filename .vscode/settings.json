@@ -1,0 +1,10 @@
+{
+	"files.associations": {
+		"*.css": "css"
+	},
+	"cSpell.words": [
+		"fira",
+		"fontsource",
+		"skeletonlabs"
+	]
+}

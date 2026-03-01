@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+@import '@fontsource/fira-mono';
+
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton-svelte';
+@import '@skeletonlabs/skeleton/themes/cerberus';
+
+body {
+	min-height: 100dvh;
+}
+
+[data-theme='cerberus'] {
+	--body-background-color: #fffce9;
+	--body-background-color-dark: #3c5072;
+}
