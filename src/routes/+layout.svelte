@@ -1,8 +1,12 @@
 <script lang="ts">
 	import Header from './Header.svelte';
+	import layoutCssUrl from './layout.css?url';
 
 	let { children } = $props();
 </script>
+<svelte:head>
+	<link rel="stylesheet" href={layoutCssUrl} />
+</svelte:head>
 
 <div class="app">
 	<Header />
@@ -39,10 +43,6 @@
 		justify-content: center;
 		align-items: center;
 		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
 	}
 
 	@media (min-width: 480px) {

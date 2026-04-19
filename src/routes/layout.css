@@ -13,5 +13,12 @@ body {
 
 [data-theme='cerberus'] {
 	--body-background-color: #fffce9;
-	--body-background-color-dark: #3c5072;
+	--color-foreground-accent: var(--color-primary-200);
+}
+
+.header-image {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1;
+	border-radius: 50%;
 }
