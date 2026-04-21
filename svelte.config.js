@@ -9,7 +9,10 @@ const config = {
 			pages: 'build/'
 		}),
 		paths: {
-			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+			base: process.env.NODE_ENV === 'production' ? '/made-by-humans' : ''
+		},
+		prerender: {
+			handleHttpError: 'warn'
 		}
 	},
 	preprocess: sveltePreprocess()
