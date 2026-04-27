@@ -9,7 +9,7 @@ const config = {
 			pages: 'build/'
 		}),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/made-by-humans' : ''
+			base: process.env.NODE_ENV === 'production' ? '' : ''
 		},
 		prerender: {
 			handleHttpError: 'warn'
