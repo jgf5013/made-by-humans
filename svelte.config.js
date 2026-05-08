@@ -13,9 +13,14 @@ const config = {
 		},
 		prerender: {
 			handleHttpError: 'warn'
+		},
+		alias: {
+			'$components/*': 'src/components/*',
+			'$lib/*': 'src/lib/*',
+			'$utils/*': 'src/utils/*'
 		}
 	},
-	preprocess: sveltePreprocess()
+	preprocess: sveltePreprocess(),
 };
 
 export default config;

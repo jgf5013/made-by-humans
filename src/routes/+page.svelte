@@ -1,4 +1,5 @@
 <script lang="ts">
+  import ContactForm from '$components/ContactForm.svelte';
 	import painterImage from '$lib/images/painter.jpg';
 </script>
 
@@ -10,8 +11,7 @@
 <main class="app">	
 	<section class="heading">
 		<div>
-			
-			<p>To ensure consumers of physical and digital media are aware of whether or not Generative AI was used in the production of some product. The organization will provide a certification service and resulting trademarked label for this purpose. The organization intends for this label to be used internationally for things like brochures, websites, designs on t-shirts and hats, books, movies, etc.</p>
+			<p>To ensure consumers of physical and digital media are aware of whether or not Generative AI was used in the production of some product. We provide a certification service and resulting trademarked label for this purpose. Operating internationally, the label can be for things like brochures, websites, designs on t-shirts and hats, books, movies, etc.</p>
 		</div>
 		<div>
 			<img class="header-image" src={painterImage} alt="Painter" />
@@ -19,6 +19,7 @@
 	</section>
 
 	<section>
+		<ContactForm />
 	</section>
 </main>
 

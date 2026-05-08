@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Header from './Header.svelte';
+	import Header from '../components/Header.svelte';
 	import layoutCssUrl from './layout.css?url';
 
 	let { children } = $props();
@@ -32,9 +32,11 @@
 		flex-direction: column;
 		padding: 1rem;
 		width: 100%;
-		max-width: 64rem;
+		max-width: 70rem;
 		margin: 0 auto;
 		box-sizing: border-box;
+		justify-content: center;
+		align-items: center;
 	}
 
 	footer {
