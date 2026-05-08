@@ -217,13 +217,6 @@ body {
 	--color-surface-contrast-950: var(--color-surface-contrast-light);
 }
 
-.header-image {
-	width: 100%;
-	height: auto;
-	aspect-ratio: 1;
-	border-radius: 50%;
-}
-
 /* Bugfix: https://www.skeleton.dev/docs/svelte/tailwind-components/forms#windows-bugfix */
 .select,
 .input,

@@ -21,7 +21,6 @@
   };
   let { path }: Props = $props();
   let pathsInHoverState: string[] = $state([]);
-  console.log('pathsInHoverState=', pathsInHoverState);
 </script>
 
 

@@ -24,12 +24,10 @@
 			pathname: '/about'
 		},
 		{
-			heading: 'Services',
 			id: 'services',
-			subPaths: [
-				{ id: 'writing-verification', heading: 'Verification: Writing', pathname: '/services/writing-verification' },
-			]
-		}
+			heading: 'Services',
+			pathname: '/services'
+		},
 	];
 </script>
 <script lang="ts">

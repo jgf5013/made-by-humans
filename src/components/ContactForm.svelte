@@ -11,7 +11,8 @@
     </label>
     <label class="label">
       <span class="label-text">Email:</span>
-      <input name="email" autocomplete="email" class="input" type="email" required/>
+      <input name="email" autocomplete="email" class="input" type="email"
+      required/>
     </label>
     <label class="label">
 			<span class="label-text">Message:</span>
