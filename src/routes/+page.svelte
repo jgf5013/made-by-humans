@@ -14,7 +14,7 @@
 		<MarketingBlock text="To ensure consumers of physical and digital media are aware of whether or not Generative AI was used in the production of some product. We provide a certification service and resulting trademarked label for this purpose. Operating internationally, the label can be for things like brochures, websites, designs on t-shirts and hats, books, movies, etc." image={{ src: painterImage, alt: "Painter" }} />
 	</section>
 
-	<section>
+	<section id="contact-form">
 		<ContactForm />
 	</section>
 </main>

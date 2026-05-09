@@ -2,6 +2,9 @@
 	import { page } from '$app/state';
   import Icon from '$components/Icon.svelte';
 	import NavBarItem from '$components/NavBarItem.svelte';
+	import { Menu as MenuIcon } from '@lucide/svelte';
+	
+	import { Menu, Portal } from '@skeletonlabs/skeleton-svelte';
 	export type Path =
 		| {
 			id: string;
@@ -42,9 +45,28 @@
 			 <Icon isActive={page.url.pathname === '/'} isInHoverState={isHeaderInHoverState} />
 			<h1 class="h1 text-primary-700-300">Made By Humans</h1>
 		</a>
-		{#each paths as path}
-			<NavBarItem path={path} />
-		{/each}
+		<div class="md:hidden">
+			<Menu>
+				<Menu.Trigger class="btn-icon btn-icon-lg hover:preset-tonal"><MenuIcon /></Menu.Trigger>
+				<Portal>
+					<Menu.Positioner>
+						<Menu.Content>
+							<Menu.Item value="about">
+								<Menu.ItemText>About</Menu.ItemText>
+							</Menu.Item>
+							<Menu.Item value="services">
+								<Menu.ItemText>Services</Menu.ItemText>
+							</Menu.Item>
+						</Menu.Content>
+					</Menu.Positioner>
+				</Portal>
+			</Menu>
+		</div>
+		<div class="hidden nav-bar-items md:flex">
+			{#each paths as path}
+				<NavBarItem path={path} />
+			{/each}
+		</div>
 	</nav>
 </header>
 
@@ -59,12 +81,15 @@
 		
 		align-items: center;
 		width: 100%;
-		gap: 2rem;
-		
+
 		.logo-heading {
 			display: flex;
 			align-items: center;
 			width: 80%;
+		}
+		.nav-bar-items {
+			
+			gap: 2rem;
 		}
 	}
 

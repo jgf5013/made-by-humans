@@ -51,5 +51,8 @@
 	"overrides": {
 		"vite": "npm:@voidzero-dev/vite-plus-core@latest",
 		"vitest": "npm:@voidzero-dev/vite-plus-test@latest"
+	},
+	"dependencies": {
+		"@lucide/svelte": "^1.14.0"
 	}
 }

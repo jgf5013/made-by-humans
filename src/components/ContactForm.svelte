@@ -1,4 +1,4 @@
-<section>
+<div class="container">
   <div class="heading-container">
     <h2 class="h2 mb-2">Ready to Get Your Product Verified?</h2>
     <em class="text-sm">We think people want to buy products that are made by humans, not algorithms. If you want to get your product verified, please fill out the form and we'll get back to you as soon as possible.</em>
@@ -20,10 +20,10 @@
 		</label>
     <button type="submit" class="btn preset-filled-primary-800-200">Submit</button>
   </form>
-</section>
+</div>
 
 <style>
-  section {
+  .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
