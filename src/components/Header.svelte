@@ -37,7 +37,7 @@
 	let isHeaderInHoverState: boolean = $state(false);
 </script>
 
-<header>
+<header class="bg-surface-50-950/70 backdrop-blur-sm">
 	<nav>
 		<a class={page.url.pathname === '/' ? 'logo-heading' : 'logo-heading nav-item'} href="/" role="menuitem" tabindex="0"
 			onmouseenter={() => isHeaderInHoverState = true}
@@ -74,6 +74,8 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+		position: sticky;
+		top: 0;
 	}
 
 	nav {
