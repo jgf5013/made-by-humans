@@ -7,16 +7,19 @@
 @import '@skeletonlabs/skeleton-svelte';
 @import '@skeletonlabs/skeleton/themes/cerberus';
 
+
 body {
 	min-height: 100dvh;
+	/* font-size: var(--text-base);
+	line-height: var(--text-base--line-height); */
 }
 
 [data-theme='madebyhumans'] {
-	--text-scaling: 1.067;
+	--text-scaling: 1.25;
 	--base-font-color: var(--color-surface-950);
 	--base-font-color-dark: var(--color-surface-100);
 	--base-font-family: system-ui, sans-serif;
-	--base-font-size: inherit;
+	--base-font-size: 20px;
 	--base-line-height: inherit;
 	--base-font-weight: normal;
 	--base-font-style: normal;
@@ -225,17 +228,3 @@ body {
 	background-color: var(--color-surface-50-950);
 	color: var(--color-surface-950-50);
 }
-
-/* TODO: I feel like I shouldn't have to do this... seems like a bug */
-/* Re-apply Skeleton heading styles after Tailwind reset */
-h1, h2, h3, h4, h5, h6 {
-	font-family: var(--font-heading, inherit);
-	font-weight: var(--heading-font-weight, 700);
-	line-height: 1.1;
-}
-h1 { font-size: var(--text-4xl, 2.25rem); }
-h2 { font-size: var(--text-3xl, 1.875rem); }
-h3 { font-size: var(--text-2xl, 1.5rem); }
-h4 { font-size: var(--text-xl, 1.25rem); }
-h5 { font-size: var(--text-lg, 1.125rem); }
-h6 { font-size: var(--text-base, 1rem); }

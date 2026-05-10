@@ -30,13 +30,13 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
 		width: 100%;
 		max-width: 70rem;
 		margin: 0 auto;
 		box-sizing: border-box;
-		justify-content: center;
 		align-items: center;
+		text-align: center;
+		height: 100%;
 	}
 
 	footer {

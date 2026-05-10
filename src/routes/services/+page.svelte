@@ -1,7 +1,7 @@
 <script>
   import MarketingBlock from "$components/MarketingBlock.svelte";
   import painterImage from "$lib/images/painter.jpg";
-  import authorImage from "$lib/images/author.jpg";
+  import authorImage from "$lib/images/author-signing.jpg";
 </script>
 <section>
 		<MarketingBlock text="Art is beautiful in part because of the wonder it leaves within us. A big chunk of that wonder comes from feeling connected to the person who created it. If you're an artist and want those buying or viewing your art to know that it was created with passion and care, our certification service can help. We're happy to provide our verified logo for artists that can prove their work is authentically human." image={{ src: painterImage, alt: "Painter" }} />

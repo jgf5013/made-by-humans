@@ -1,25 +1,9 @@
 <script lang="ts" module>
-	import { page } from '$app/state';
-  import Icon from '$components/Icon.svelte';
-	import NavBarItem from '$components/NavBarItem.svelte';
-	import { Menu as MenuIcon } from '@lucide/svelte';
-	
-	import { Menu, Portal } from '@skeletonlabs/skeleton-svelte';
-	export type Path =
-		| {
-			id: string;
-			heading: string;
-			pathname: string;
-		}
-		| {
-			id: string;
-			heading: string;
-			subPaths: {
-				id: string;
-				heading: string;
-				pathname: string;
-			}[];
-		};
+	export type Path = {
+		id: string;
+		heading: string;
+		pathname: string;
+	};
 	export const paths: Path[] = [
 		{
 			id: 'about',
@@ -34,16 +18,28 @@
 	];
 </script>
 <script lang="ts">
+	import { page } from '$app/state';
+	import NavBarItem from '$components/NavBarItem.svelte';
+	import { Menu as MenuIcon } from '@lucide/svelte';
+	
+	import { Menu, Portal } from '@skeletonlabs/skeleton-svelte';
+  import IconMadeByHumans from './IconMadeByHumans.svelte';
+  import { MOBILE_WIDTH_BREAKPOINT_PX } from '../consts';
 	let isHeaderInHoverState: boolean = $state(false);
+	let x = $state(0);
+	let isMobile = $derived(x <= MOBILE_WIDTH_BREAKPOINT_PX);
+	let iconWidth = $derived(isMobile ? 40 : 70);
 </script>
+<svelte:window bind:innerWidth={x} />
+
 
 <header class="bg-surface-50-950/70 backdrop-blur-sm">
-	<nav>
+	<nav class="mx-4 my-2">
 		<a class={page.url.pathname === '/' ? 'logo-heading' : 'logo-heading nav-item'} href="/" role="menuitem" tabindex="0"
 			onmouseenter={() => isHeaderInHoverState = true}
 			onmouseleave={() => isHeaderInHoverState = false}>
-			 <Icon isActive={page.url.pathname === '/'} isInHoverState={isHeaderInHoverState} />
-			<h1 class="h1 text-primary-700-300">Made By Humans</h1>
+			 <IconMadeByHumans isActive={page.url.pathname === '/'} isInHoverState={isHeaderInHoverState} width={iconWidth} />
+			<h1 class="h4 md:h1 mx-4 text-primary-700-300">Made By Humans</h1>
 		</a>
 		<div class="md:hidden">
 			<Menu>
@@ -87,7 +83,7 @@
 		.logo-heading {
 			display: flex;
 			align-items: center;
-			width: 80%;
+			flex-grow: 1;
 		}
 		.nav-bar-items {
 			

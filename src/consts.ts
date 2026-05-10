@@ -1,0 +1,1 @@
+export const MOBILE_WIDTH_BREAKPOINT_PX = 768;
