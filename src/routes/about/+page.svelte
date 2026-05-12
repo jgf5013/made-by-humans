@@ -10,7 +10,7 @@
     <p>
       In 2026, we decided enough was enough - we set out to build a world where creators are recognized and rewarded for their originality, and where consumers can make informed choices about the products they buy. Our vision is to establish a trusted standard for identifying and labeling content created without the use of Generative AI, fostering transparency and accountability in the creative industry.
     </p>
-    <IconMadeByHumans />
+    <!-- <IconMadeByHumans /> -->
   </div>
   <p>With this vision, we aim to ensure</p>
   <ul class="list-disc">
@@ -33,6 +33,7 @@
     max-width: 40rem;
     margin: 0 auto;
     text-align: left;
+    text-align: justify;
   }
   ul {
     padding-left: 25px;
