@@ -42,7 +42,12 @@
 			<h1 class="h4 md:h1 mx-4 text-primary-700-300">Made By Humans</h1>
 		</a>
 		<div class="md:hidden">
-			<Menu>
+			<Menu onSelect={(e) => {
+				const path = paths.find((path) => path.id === e.value);
+				if (path) {
+					window.location.href = path.pathname;
+				}
+			}}>
 				<Menu.Trigger class="btn-icon btn-icon-lg hover:preset-tonal"><MenuIcon /></Menu.Trigger>
 				<Portal>
 					<Menu.Positioner>

@@ -19,7 +19,7 @@
     }
   ];
 </script>
-<section>
+<section class="route-content">
   {#each services as { text, image }}
     <MarketingBlock text={text} image={image} />
   {/each}
