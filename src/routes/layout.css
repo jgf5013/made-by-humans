@@ -220,6 +220,11 @@ body {
 	--color-surface-contrast-950: var(--color-surface-contrast-light);
 }
 
+/* https://tailwindcss.com/docs/responsive-design#customizing-your-theme */
+@theme {
+  --breakpoint-xs: 30rem;
+}
+
 /* Bugfix: https://www.skeleton.dev/docs/svelte/tailwind-components/forms#windows-bugfix */
 .select,
 .input,
@@ -227,4 +232,8 @@ body {
 .input-group {
 	background-color: var(--color-surface-50-950);
 	color: var(--color-surface-950-50);
+}
+
+.route-content {
+	margin: 1rem;
 }

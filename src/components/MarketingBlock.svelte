@@ -19,8 +19,8 @@
   let { image, text }: Props = $props();
 </script>
 
-<div class="flex flex-col flex-row-reverse md:flex-row items-center gap-4 {text.textPosition === TextPositions.RIGHT ? 'md:flex-row-reverse' : ''}">
-  <div class="marketing-image-container">
+<div class="flex flex-col xs:flex-row items-center gap-4 {text.textPosition === TextPositions.RIGHT ? 'xs:flex-row-reverse' : ''}">
+  <div class="marketing-image-container w-full xs:w-1/3">
     <img class="marketing-image" src={image.src} alt={image.alt} />
   </div>
   <div>
@@ -31,10 +31,11 @@
 <style>
   .marketing-image-container {
     display: flex;
+    justify-content: center;
     max-height: 600px;
   }
   .marketing-image {
-    width: 100%;
+    width: clamp(200px, 50vw, 400px);
     min-height: 100px;
     min-width: 200px;
     height: auto;

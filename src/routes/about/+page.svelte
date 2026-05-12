@@ -2,7 +2,7 @@
   import IconMadeByHumans from "$components/IconMadeByHumans.svelte";
 
 </script>
-<section>
+<section class="route-content">
   <p>
     In 2023, actors and writers went on strike across the world, demanding protections from AI. One of the artists is <a href="https://www.bbc.com/news/business-66289583" class="anchor text-secondary-700-300">quoted</a> as saying <em>"I don't want to be replaced with something artificial."</em> Generative AI is now making music, writing novels, and creating films. Legal action is needed but courts move slow and consumers are already being misled.
   </p>
@@ -31,7 +31,6 @@
     gap: 1rem;
     padding: 2rem 0;
     max-width: 40rem;
-    margin: 0 auto;
     text-align: left;
     text-align: justify;
   }

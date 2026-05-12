@@ -13,7 +13,7 @@
 <!-- <HeadingBlockBlur image={{ src: authorWritingImage, alt: "Person Writing" }} /> -->
 
 <HeadingBlock image={{ src: authorWritingImage, alt: "Person Writing" }} />
-<section id="contact-form">
+<section id="contact-form" class="route-content">
 	<ContactForm />
 </section>
 
