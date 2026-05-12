@@ -5,18 +5,18 @@
   const services = [
     {
       text: {
+        content: "You just finished writing a novel and you're wondering if people will believe you wrote every word? We understand. If you can prove your writing was produced without the help of AI, we'd love for you to use our verified logo!",
+        textPosition: TextPositions.LEFT
+      },
+      image: { src: authorImage, alt: "Author signing a book"}
+    },
+    {
+      text: {
         content: "You just finished a painting and you're wondering if people will believe you painted every stroke? We understand. If you can prove your art was produced without the help of AI, we'd love for you to use our verified logo!",
         textPosition: TextPositions.RIGHT
       },
       image: { src: painterImage, alt: "Painter" }
     },
-    {
-      text: {
-        content: "You just finished writing a novel and you're wondering if people will believe you wrote every word? We understand. If you can prove your writing was produced without the help of AI, we'd love for you to use our verified logo!",
-        textPosition: TextPositions.LEFT
-      },
-      image: { src: authorImage, alt: "Author signing a book"}
-    }
   ];
 </script>
 <section class="route-content">
