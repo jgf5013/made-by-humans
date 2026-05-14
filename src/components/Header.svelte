@@ -42,21 +42,16 @@
 			<h1 class="h4 md:h1 mx-4 text-primary-700-300">Made By Humans</h1>
 		</a>
 		<div class="md:hidden">
-			<Menu onSelect={(e) => {
-				const path = paths.find((path) => path.id === e.value);
-				if (path) {
-					window.location.href = path.pathname;
-				}
-			}}>
+			<Menu>
 				<Menu.Trigger class="btn-icon btn-icon-lg hover:preset-tonal"><MenuIcon /></Menu.Trigger>
 				<Portal>
 					<Menu.Positioner>
 						<Menu.Content>
 							<Menu.Item value="about">
-								<Menu.ItemText>About</Menu.ItemText>
+								<a href="/about">About</a>
 							</Menu.Item>
 							<Menu.Item value="services">
-								<Menu.ItemText>Services</Menu.ItemText>
+								<a href="/services">Services</a>
 							</Menu.Item>
 						</Menu.Content>
 					</Menu.Positioner>
