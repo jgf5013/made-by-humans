@@ -217,7 +217,7 @@ export default defineConfig({
     trailingComma: "none",
     printWidth: 100,
     sortTailwindcss: {
-      stylesheet: "./src/routes/layout.css",
+      stylesheet: "./src/app.css",
     },
     sortPackageJson: false,
     ignorePatterns: [

@@ -1,10 +1,12 @@
 <script lang="ts">
 	import Header from '../components/Header.svelte';
+	import appCssUrl from '../app.css?url';
 	import layoutCssUrl from './layout.css?url';
 
 	let { children } = $props();
 </script>
 <svelte:head>
+	<link rel="stylesheet" href={appCssUrl} />
 	<link rel="stylesheet" href={layoutCssUrl} />
 </svelte:head>
 
