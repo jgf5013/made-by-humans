@@ -1,0 +1,25 @@
+{
+	"name": "Made By Humans - Sveltekit",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+	"overrideCommand": true, // Let VS Code keep it alive
+	"postCreateCommand": "npm install && npm run dev -- --host 0.0.0.0",
+	"forwardPorts": [5173], // Switch to SvelteKit/Vite's default dev port
+	"remoteUser": "root",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"esbenp.prettier-vscode",
+				"voidzero.vite-plus-extension-pack",
+				"formulahendry.auto-rename-tag",
+				"yoavbls.pretty-ts-errors",
+				"simonsiefke.svg-preview",
+				"dbaeumer.vscode-eslint",
+				"ms-azuretools.vscode-containers",
+				"bierner.github-markdown-preview",
+				"svelte.svelte-vscode",
+				"redhat.vscode-yaml",
+				"streetsidesoftware.code-spell-checker"
+			]
+		}
+	}
+}
