@@ -35,7 +35,7 @@
 		"@types/node": "^22",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.14.0",
-		"globals": "^17.3.0",
+		"globals": "^17.6.0",
 		"playwright": "^1.58.1",
 		"svelte": "^5.51.0",
 		"svelte-check": "^4.3.6",
