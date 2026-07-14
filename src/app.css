@@ -7,7 +7,6 @@
 @import '@skeletonlabs/skeleton-svelte';
 @import '@skeletonlabs/skeleton/themes/cerberus';
 
-
 body {
 	min-height: 100dvh;
 	/* font-size: var(--text-base);
@@ -222,7 +221,7 @@ body {
 
 /* https://tailwindcss.com/docs/responsive-design#customizing-your-theme */
 @theme {
-  --breakpoint-xs: 30rem;
+	--breakpoint-xs: 30rem;
 }
 
 /* Bugfix: https://www.skeleton.dev/docs/svelte/tailwind-components/forms#windows-bugfix */

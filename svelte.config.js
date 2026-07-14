@@ -19,7 +19,7 @@ const config = {
 			'$utils/*': 'src/utils/*'
 		}
 	},
-	preprocess: sveltePreprocess(),
+	preprocess: sveltePreprocess()
 };
 
 export default config;
